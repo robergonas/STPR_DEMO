@@ -1,0 +1,10 @@
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\bin\Debug\STPR_Demo.exe.config
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\bin\Debug\STPR_Demo.exe
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\bin\Debug\STPR_Demo.pdb
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\obj\Debug\STPR_Demo.csproj.AssemblyReference.cache
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\obj\Debug\STPR_Demo.Form1.resources
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\obj\Debug\STPR_Demo.Properties.Resources.resources
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\obj\Debug\STPR_Demo.csproj.GenerateResource.cache
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\obj\Debug\STPR_Demo.csproj.CoreCompileInputs.cache
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\obj\Debug\STPR_Demo.exe
+C:\Personal\UPN\Titulo\STPR\Source Code\STPR_Demo\STPR_Demo\obj\Debug\STPR_Demo.pdb
