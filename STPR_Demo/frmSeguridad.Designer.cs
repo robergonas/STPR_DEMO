@@ -42,6 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(100, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 15);
@@ -52,6 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(188, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 15);
@@ -62,6 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(12, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 15);
@@ -72,6 +75,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(12, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 15);
@@ -80,6 +84,7 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtUsuario.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(67, 55);
             this.txtUsuario.Name = "txtUsuario";
@@ -89,6 +94,7 @@
             // 
             // txtClave
             // 
+            this.txtClave.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtClave.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClave.Location = new System.Drawing.Point(67, 96);
             this.txtClave.Name = "txtClave";
@@ -127,6 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(449, 204);
             this.ControlBox = false;
             this.Controls.Add(this.btnCerrar);
@@ -137,6 +144,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(465, 243);
+            this.MinimumSize = new System.Drawing.Size(465, 243);
             this.Name = "frmSeguridad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "...:: STPR - Demo Seguridad ::...";

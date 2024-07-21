@@ -1,4 +1,5 @@
-﻿using STPR_UI.Modelo;
+﻿using STPR_UI;
+using STPR_UI.Modelo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,18 @@ namespace STPR_Demo
         public frmSeguridad()
         {
             InitializeComponent();
+
+            txtUsuario.KeyDown += new KeyEventHandler(Control_KeyDown);
+            txtClave.KeyDown += new KeyEventHandler(Control_KeyDown);
+            txtUsuario.Focus(); 
+        }
+        private void Control_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {                
+                this.SelectNextControl((Control)sender, true, true, true, true);
+                e.SuppressKeyPress = true;
+            }
         }
         private void btnEntrar_Click(object sender, EventArgs e)
         {
@@ -42,7 +55,9 @@ namespace STPR_Demo
             var objUsuario = new tm_usuarioBL().get_usuario(txtUsuario.Text, out mensajeRetorno);
             if (new utilitarioBL().VerificarClave(txtClave.Text, objUsuario.clave))
             {
-                MessageBox.Show("Inicio de sesión exitoso.");
+                var form = new frmPacienteConsulta();
+                form.ShowDialog();
+                this.Hide();
             }
             else {
                 MessageBox.Show("Nombre de usuario o contraseña incorrectos.");
