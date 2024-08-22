@@ -10,8 +10,8 @@ namespace STPR_UI.Modelo
 {
     public class tm_usuarioBL
     {
-        public tm_usuarioBE get_usuario(string usuario, out string mensajeRetorno) {
-            return new tm_usuarioDA().get_usuario(usuario, out mensajeRetorno);
+        public void get_usuario(string usuario, out string mensajeRetorno) {
+            new tm_usuarioDA().get_usuario(usuario, out mensajeRetorno);
         }
     }
 }

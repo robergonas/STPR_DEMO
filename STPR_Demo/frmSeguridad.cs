@@ -1,4 +1,5 @@
 ﻿using STPR_UI;
+using STPR_UI.Entidad;
 using STPR_UI.Modelo;
 using System;
 using System.Collections.Generic;
@@ -50,10 +51,9 @@ namespace STPR_Demo
                 MessageBox.Show(mensaje,"Se encontrarón las siguientes incidencias");
                 return;
             }
-
-            var textoEncriptado = new utilitarioBL().HashPassword(txtClave.Text);
-            var objUsuario = new tm_usuarioBL().get_usuario(txtUsuario.Text, out mensajeRetorno);
-            if (new utilitarioBL().VerificarClave(txtClave.Text, objUsuario.clave))
+            
+            new tm_usuarioBL().get_usuario(txtUsuario.Text, out mensajeRetorno);
+            if (new utilitarioBL().VerificarClave(txtClave.Text, tm_usuarioBE.clave))
             {
                 var form = new frmPacienteConsulta();
                 form.ShowDialog();

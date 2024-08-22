@@ -24,9 +24,11 @@ namespace STPR_UI.Entidad
         public int usuarioCrea { get; set; }
         public DateTime? fechaActualiza { get; set; }
         public int? usuarioActualiza { get; set; }
+        public int idstpr { get; set; }
 
         public tm_pacienteBE() { }
-        public tm_pacienteBE(SqlDataReader reader) {
+        public tm_pacienteBE(SqlDataReader reader)
+        {
             idPaciente = Convert.ToInt32(reader["idPaciente"]);
             nombre = Convert.ToString(reader["nombre"]);
             apellidoPaterno = Convert.ToString(reader["apellidoPaterno"]);
@@ -40,11 +42,9 @@ namespace STPR_UI.Entidad
             fechaRegistro = Convert.ToDateTime(reader["fechaRegistro"]);
             fechaCrea = Convert.ToDateTime(reader["fechaCrea"]);
             usuarioCrea = Convert.ToInt32(reader["usuarioCrea"]);
-            DateTime? fecAct = reader["fechaActualiza"] as DateTime?;
-            int? usAct = reader["usuarioActualiza"] as Int32?;
-
-            fechaActualiza = fecAct;
-            usuarioActualiza = usAct;
+            fechaActualiza = reader["fechaActualiza"] != DBNull.Value ? Convert.ToDateTime(reader["fechaActualiza "]) : (DateTime?)null;
+            usuarioActualiza = reader["usuarioActualiza"] != DBNull.Value ? Convert.ToInt32(reader["usuarioActualiza"]) : (int?)null;
+            idstpr = Convert.ToInt32(reader["idstpr"]);
         }
     }
 }
