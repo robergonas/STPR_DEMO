@@ -15,9 +15,9 @@ namespace STPR_UI.Modelo
 {
     public class utilitarioBL
     {
-        private static readonly string botToken = "7187001732:AAHR2_hpjiyZ8x-XSwSEAAu_-JctMKhrkJA";
-        private static readonly string chatIdRGP = "284653685";
-        private static readonly string chatIdAG = "6656872914";
+        private static readonly string botToken = "";
+        private static readonly string chatIdRGP = "";
+        private static readonly string chatIdAG = ";
         public string MensajeNotificacion(string datosPaciente, string fechaCita, string horaCita, string especialidad, string datosMedico)
         {
             var mensaje = "*** Instrucciones Importantes Antes de su Cita Médica ***";
